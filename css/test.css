@@ -1,0 +1,43 @@
+/*body {
+    background-color: f1f1f1;
+  }
+  */
+ header {
+    text-align: center;
+    background: url('../images/workspace.jpg') no-repeat top center ;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+
+/*
+  .main-nav {
+      width: 100%;
+      background: black;
+      min-height: 35px; 
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+  
+  li {
+      display: inline;
+      float: left;
+  }
+  
+  li a {
+      display: block;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+  
+    li a:hover {
+      background-color: rgb(153, 150, 150);
+      color: white;
+      text-decoration: underline;
+    }
