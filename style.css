@@ -28,3 +28,35 @@ li a {
     text-decoration: underline;
   }
 
+  header {
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  header {
+    line-height: 1.5;
+  }
+
+  header .photo-alter {
+    margin-top: 1px;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 15px solid white;
+    transition: all .5s;
+  }
+
+header .photo-alter:hover {
+    transform: scale(1.2) rotate(360deg);
+
+}
+
+.tag {
+    background-color: #e2e2e2;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 10px auto;
+  } 
