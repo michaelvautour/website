@@ -8,7 +8,7 @@ ul {
     padding: 0;
     background-color: #f1f1f1;
   }
- 
+
 li {
     display: inline;
     float: left;
@@ -20,9 +20,11 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
   }
-  
+
   /* changes color of link when on hover */
   li a:hover {
     background-color: #555;
     color: white;
+    text-decoration: underline;
   }
+
