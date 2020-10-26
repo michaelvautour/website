@@ -1,5 +1,5 @@
 body {
-  background-color: f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .image-background {
@@ -13,22 +13,21 @@ body {
 .main-nav {
     width: 100%;
     background: black;
-    min-height: 35px; 
+    min-height: 35px;   
 }
 
-ul {
+.ul-nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
+    margin: 0px;
+    padding: 0px;
   }
 
-li {
+.li-nav {
     display: inline;
     float: left;
 }
 
-li a {
+.li-a-nav {
     display: block;
     color: white;
     padding: 8px 16px;
@@ -36,12 +35,11 @@ li a {
   }
 
   /* changes color of link when on hover */
-  li a:hover {
+  .li-a-hover:hover {
     background-color: rgb(153, 150, 150);
     color: white;
     text-decoration: underline;
   }
-
 
   header {
     text-align: center;
@@ -71,10 +69,10 @@ header .photo-alter:hover {
 .tag {
     background-color: #e2e2e2;
     color: black;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 2.5px;
+    border-radius: 2.5px;
     display: table;
-    margin: 10px auto;
+    margin: 2.5px auto;
   } 
 
 
@@ -95,4 +93,20 @@ header .photo-alter:hover {
     color: white;
     border-radius: 7.5%;
     padding: 5px;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+
+
+.center {
+  text-align: center;
 }
