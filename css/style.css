@@ -105,8 +105,11 @@ header .photo-alter:hover {
   border-radius: 6px;
 }
 
-
-
 .center {
   text-align: center;
+}
+
+.img-social {
+  width: 35px;
+  height: 35px;
 }
