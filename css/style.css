@@ -46,9 +46,6 @@ body {
     background-size: cover;
     overflow: hidden;
     padding-top: 60px;
-  }
-
-  header {
     line-height: 1.5;
   }
 
@@ -63,7 +60,12 @@ body {
 
 header .photo-alter:hover {
     transform: scale(1.2) rotate(360deg);
+}
 
+/* Makes the image larger so it show the full image, without it 1/2 the bottom was cut off */
+.banner-padding {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .tag {
@@ -74,7 +76,6 @@ header .photo-alter:hover {
     display: table;
     margin: 2.5px auto;
   } 
-
 
 .html-card {
     background: rgb(82, 163, 201);
@@ -95,14 +96,8 @@ header .photo-alter:hover {
     padding: 5px;
 }
 
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: rgb(255, 255, 255);
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+.flex-container {
+  display: flex;
 }
 
 .center {
@@ -121,17 +116,17 @@ header .photo-alter:hover {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  /* background-color: #2196F3; */
+  grid-template-columns: repeat(2, 1fr);
   padding: 5px;
+  padding-bottom: 100px;
 }
 .grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 5px;
-  /* font-size: 30px; */
-  /* text-align: center; */
-}
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  border-bottom: 4px solid #ccc;
+} 
+
 
 .title-padding {
   padding-top: 100px;
