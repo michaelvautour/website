@@ -3,10 +3,6 @@
 		{
 			"name": "website",
 			"path": "."
-		},
-		{
-			"name": "treehouse-frontend-projects",
-			"path": "../../../treehouse project/treehouse-frontend-projects"
 		}
 	],
 	"settings": {}
