@@ -3,11 +3,8 @@ body {
 }
 
 .image-background {
-  text-align: center;
   background: url('../images/workspace.jpg') no-repeat top center ;
   background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
 }
 
 .main-nav {
@@ -15,12 +12,6 @@ body {
     background: black;
     min-height: 35px;   
 }
-
-.ul-nav {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  }
 
 .li-nav {
     display: inline;
@@ -62,6 +53,9 @@ header .photo-alter:hover {
     transform: scale(1.2) rotate(360deg);
 }
 
+h2 {
+  text-align: center;
+}
 /* Makes the image larger so it show the full image, without it 1/2 the bottom was cut off */
 .banner-padding {
   padding-top: 200px;
@@ -96,22 +90,8 @@ header .photo-alter:hover {
     padding: 5px;
 }
 
-.flex-container {
-  display: flex;
-}
-
 .center {
   text-align: center;
-}
-
-.img-social {
-  width: 35px;
-  height: 35px;
-}
-
-.img-portfolio {
-  width: 60%;
-  height: 80%;
 }
 
 .grid-container {
@@ -120,17 +100,34 @@ header .photo-alter:hover {
   padding: .5px;
   padding-bottom: 100px;
   grid-gap: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  border-bottom: 4px solid #ccc;
- 
-} 
 
+.grid-item {
+  background-color: rgba(255, 255, 255, .8);
+  padding: .5rem 1rem 1rem;
+  /* max-width: 500px; */
+  border-bottom: 4px solid #ccc;
+} 
 
 .title-padding {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.img-portfolio {
+  width: 60%;
+  height: 80%;
+}
+
+.img-social {
+  width: 35px;
+  height: 35px;
 }
