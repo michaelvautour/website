@@ -5,6 +5,7 @@ body {
 .image-background {
   background: url('../images/workspace.jpg') no-repeat top center ;
   background-size: cover;
+  width: 100%
 }
 
 .main-nav {
