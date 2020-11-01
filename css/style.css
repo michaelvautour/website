@@ -94,6 +94,13 @@ h2 {
 .center {
   text-align: center;
 }
+.prop-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25;
+}
 
 .grid-container {
   display: grid;
