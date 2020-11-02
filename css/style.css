@@ -98,30 +98,49 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
-  height: 25;
+  width: 50%;
+  height: 50%;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 600px);
+  display: flex;
+  flex-wrap: nowrap;
   padding: .5px;
   padding-bottom: 100px;
   grid-gap: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: auto;
 }
 
 .grid-item {
+  width: 100%;
+  margin: 10px;
+  border-bottom: 4px solid #ccc;
+  /* background-color: rgba(255, 255, 255, .8); */
+  padding: .5rem 1rem 1rem;
+ } 
+ 
+/* 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 550px);
+  padding: .5px;
+  padding-bottom: 100px;
+  grid-gap: 1rem;
+  margin: auto;
+  /* margin-left: 10%;
+  margin-right: 10%; 
+}
+
+/* .grid-item {
   background-color: rgba(255, 255, 255, .8);
   padding: .5rem 1rem 1rem;
-  /* max-width: 500px; */
+  /* max-width: 500px;
   border-bottom: 4px solid #ccc;
-} 
+}  */
 
 .title-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 footer {
