@@ -4,15 +4,13 @@ body {
 
 .image-background {
   background: url('../images/workspace.jpg') no-repeat top center ;
-  background-size: cover;
-  width: 100%
+  background-size: 100% 100%;
 }
 
 .main-nav {
     width: 100%;
     background: black;
     min-height: 35px;
-    margin-top: -16px;
 }
 
 .li-nav {
@@ -36,8 +34,6 @@ body {
 
   header {
     text-align: center;
-    background-size: cover;
-    overflow: hidden;
     padding-top: 60px;
     line-height: 1.5;
   }
@@ -103,7 +99,7 @@ h2 {
   height: 50%;
 }
 
-.grid-container {
+.flex-container {
   display: flex;
   flex-wrap: nowrap;
   padding: .5px;
@@ -112,12 +108,13 @@ h2 {
   margin: auto;
 }
 
-.grid-item {
+.flex-item {
   width: 100%;
   margin: 10px;
   border-bottom: 4px solid #ccc;
   /* background-color: rgba(255, 255, 255, .8); */
   padding: .5rem 1rem 1rem;
+  min-width: 500px;
  } 
  
 .title-padding {
@@ -134,9 +131,22 @@ footer {
 .img-portfolio {
   width: 60%;
   height: 80%;
+  margin: auto;
 }
 
 .img-social {
   width: 35px;
   height: 35px;
+}
+
+@media screen and (max-width: 1150px) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    width: 50%;
+    margin: auto;
+  }
 }
