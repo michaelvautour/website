@@ -11,12 +11,12 @@ body {
 .main-nav {
     width: 100%;
     background: black;
-    min-height: 35px;   
+    min-height: 35px;
 }
 
 .li-nav {
-    display: inline;
-    float: left;
+  display: block;
+  float: left;
 }
 
 .li-a-nav {
@@ -85,10 +85,10 @@ h2 {
 }
 
 .padding-color {
-    display: inline-block;
-    color: white;
-    border-radius: 7.5%;
-    padding: 5px;
+  display: inline-block;
+  color: white;
+  border-radius: 7.5%;
+  padding: 5px;
 }
 
 .center {
@@ -119,25 +119,6 @@ h2 {
   padding: .5rem 1rem 1rem;
  } 
  
-/* 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 550px);
-  padding: .5px;
-  padding-bottom: 100px;
-  grid-gap: 1rem;
-  margin: auto;
-  /* margin-left: 10%;
-  margin-right: 10%; 
-}
-
-/* .grid-item {
-  background-color: rgba(255, 255, 255, .8);
-  padding: .5rem 1rem 1rem;
-  /* max-width: 500px;
-  border-bottom: 4px solid #ccc;
-}  */
-
 .title-padding {
   padding-top: 50px;
   padding-bottom: 50px;
