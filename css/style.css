@@ -148,7 +148,8 @@ footer {
   .flex-item {
     width: 50%;
     margin: auto;
-    padding-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     /* border-bottom: none; */
   }
 }
