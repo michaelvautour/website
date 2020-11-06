@@ -5,11 +5,11 @@ body {
 * {
   margin:0;
   padding:0;
+  /* box-sizing: border-box; tried this element it fixed height but not width */
 }
 
 .image-background {
   background: url('../images/workspace.jpg') no-repeat top center;
-  background-size: 100% 100%;
   background-size: cover;
 
 }
@@ -57,7 +57,11 @@ body {
 header .photo-alter:hover {
     transform: scale(1.2) rotate(360deg);
 }
- 
+
+h1 {
+  text-shadow: 4px 2px grey;
+}
+
 h2 {
   text-align: center;
 }
@@ -75,7 +79,7 @@ h2 {
     display: table;
     margin: 2.5px auto;
   } 
-
+  
 .html-card {
     background: rgb(82, 163, 201);
 }

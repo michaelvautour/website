@@ -3,66 +3,79 @@ body {
     font-family: "Aerial";
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; tried this element it fixed height but not width */
+}
+
 
 .image-background {
-    background: url('../images/workspace.jpg') no-repeat top center ;
-    background-size: cover;
-    width: 100%
+  background: url('../images/workspace.jpg') no-repeat top center;
+  background-size: cover;
+
+}
+
+.main-nav {
+    width: 100%;
+    background: black;
+    min-height: 35px;
+}
+
+.li-nav {
+  display: block;
+  float: left;
+}
+
+.li-a-nav {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
   }
-  
-  .main-nav {
-      width: 100%;
-      background: black;
-      min-height: 35px;   
+
+  /* changes color of link when on hover */
+  .li-a-hover:hover {
+    background-color: rgb(153, 150, 150);
+    color: white;
+    text-decoration: underline;
   }
-  
-  .li-nav {
-      display: inline;
-      float: left;
+
+  header {
+    text-align: center;
+    padding-top: 60px;
+    line-height: 1.5;
   }
-  
-  .li-a-nav {
-      display: block;
-      color: white;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-  
-    /* changes color of link when on hover */
-    .li-a-hover:hover {
-      background-color: rgb(153, 150, 150);
-      color: white;
-      text-decoration: underline;
-    }
-  
-    header {
-      text-align: center;
-      background-size: cover;
-      overflow: hidden;
-      padding-top: 60px;
-      line-height: 1.5;
-    }
-  
-    header .photo-alter {
-      margin-top: 1px;
-      width: 15%;
-      height: 15%;
-      border-radius: 50%;
-      border: 5px solid white;
-      transition: all .5s;
-    }
-  
-  header .photo-alter:hover {
-      transform: scale(1.2) rotate(360deg);
+
+  header .photo-alter {
+    margin-top: 1px;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all .5s;
   }
-  
-  .banner-padding {
+
+header .photo-alter:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+h1 {
+  text-shadow: 4px 2px grey;
+}
+
+.list-padding {
+  line-height: 1.2;
+  margin: 10px 50px 20px;
+}
+
+.banner-padding {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
   .tag {
-    /* background-color: #e2e2e2; */ /* re-add this context if I want boxes arround my text... will need to change text color to black though */
+    /* background-color: #e2e2e2; re-add this context if I want boxes arround my text... will need to change text color to black though  */
     color: white;
     padding: 2.5px;
     border-radius: 2.5px;
@@ -70,14 +83,10 @@ body {
     margin: 2.5px auto;
   } 
 
-.main-image {
-    border: solid 4px black;
-    border-radius: 50%;
-}
-
 .section-title {
     text-transform: capitalize;
 }
+
 
 .nobullets {
     list-style-type: none;
