@@ -9,7 +9,6 @@ body {
   /* box-sizing: border-box; tried this element it fixed height but not width */
 }
 
-
 .image-background {
   background: url('../images/workspace.jpg') no-repeat top center;
   background-size: cover;
