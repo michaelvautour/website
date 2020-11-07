@@ -87,7 +87,6 @@ section ul {
 }
 
 .tag {
-    /* background-color: #e2e2e2; */ /* re-add this context if I want boxes arround my text... will need to change text color to black though */
     color: white;
     padding: 2.5px;
     border-radius: 2.5px;
