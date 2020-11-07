@@ -167,6 +167,8 @@ footer {
     padding-bottom: 50px;
     white-space: nowrap;
     padding-left: 0px;
+    border-bottom: 4px solid rgb(49, 45, 45);
+
   }
 }
 
