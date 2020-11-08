@@ -23,6 +23,7 @@ background-size: cover;
     width: 100%;
     background: black;
     min-height: 35px;
+    position: fixed;
 }
 
 .li-nav {
