@@ -82,7 +82,7 @@ h1 {
     margin: 2.5px auto;
   } 
 
-.section-title {
+section h2 {
     text-transform: capitalize;
 }
 
