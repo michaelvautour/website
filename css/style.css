@@ -157,6 +157,10 @@ footer {
   height: 35px;
 }
 
+.img-yt {
+  width: 3%;
+  height: 3%;
+}
 
 @media screen and (max-width: 1325px) {
 
