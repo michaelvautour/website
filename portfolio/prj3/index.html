@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Code Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+  <body>
+
+
+    <header>
+        <h1>The code review</h1>
+    </header>
+
+    <main>
+        <div class="newsarea">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+        <div>
+            <form action="index.html" method="POST">
+                <fieldset class="wrapper border">
+                    <legend class="border">Contact Information</legend>
+                    
+                    <div class="flex">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fname" required placeholder="Required" class="dsk_adj">
+                    </div>
+
+                    <div class="flex">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Required" class="dsk_adj">
+                    </div>
+
+                    <div class="flex">
+                        <label for="pnum">Phone Number</label>
+                        <input type="tel" id="pnum" name="pnum" class="dsk_adj">
+                    </div>
+
+                    <div class="flex">
+                        <label for="streetadd">Street Address</label>
+                        <input type="text" id="streetadd" name="streetadd" class="dsk_adj">
+                    </div>
+
+                    <div class="flex">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" class="dsk_adj">
+                    </div>
+
+                    <div class="flex">
+                        <label for="prov">Province</label>
+                        <select id="prov" name="prov" class="dsk_adj">
+                            <option selected disabled>Choose Province</option>
+                            <option value="ab">Alberta</option>
+                            <option value="bc">British Columbia</option>
+                            <option value="mb">Manitoba</option>
+                            <option value="nl">New Brunswick</option>
+                            <option value="nl">Newfoundland and Labrador</option>
+                            <option value="nw">Northwest Territories</option>
+                            <option value="ns">Nova Scotia</option>
+                            <option value="nu">Nunavut</option>
+                            <option value="ont">Ontario</option>
+                            <option value="pei">Prince Edward Island</option>
+                            <option value="qc">Quebec</option>
+                            <option value="sk">Saskatchewan</option>
+                            <option value="yk">Yukon</option>
+
+                        </select>
+                    </div>
+
+                    <div class="flex">
+                        <label for="pcode" class="pcode_lab_adjust">Postal Code</label>
+                        <input type="text" id="pcode" name="pcode" class="pcode_inp_adjust">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="wrapper">
+                    <legend class="nletterbord">Newsletter</legend>
+
+                    <p>Select the newsletters you would like to receive</p>
+                <div>
+                    <input type="checkbox" id="htmllang" name="htmllang" value="htmlsnews">
+                    <label for="htmllang" class='padded'>HTML News</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="csslang" name="csslang" value="cssnews">
+                    <label for="csslang" class='padded'>CSS News</label>
+                </div>      
+
+                <div>
+                    <input type="checkbox" id="jslang" name="jslang" value="jsnews">
+                    <label for="jslang" class='padded'>Javascript News</label>
+                </div>
+
+                    <p>Newsletter format</p>
+
+                <div>
+                    <input type="radio" id="html" name="radio_news" value="html_selection">
+                    <label for="html" class='padded'>HTML</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="plain_text" name="radio_news" value="plain_selection">
+                    <label for="plain_text" class='padded'>Plain text</label>
+                </div>
+
+                <div>
+                    <label for="comment">Other topics you'd like to hear about</label>
+                    <textarea name="comment" id="comment">
+                        
+                    </textarea>
+                </div>
+
+                </fieldset>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+        </div>
+
+    </main>
+
+
+        <footer class='clearfix'>
+            <p>&copy; The Code Review</p>
+        </footer>
+</body>
+</html>
