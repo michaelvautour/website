@@ -1,7 +1,7 @@
-body {
-  /* background-color: #f1f1f1; */
+/* body {
+  background-color: #f1f1f1;
   background-color: white;
-}
+} */
 
 * {
   margin:0;
@@ -9,14 +9,16 @@ body {
   /* box-sizing: border-box; tried this element it fixed height but not width */
 }
 
-/* .image-background {
+/* Old background regular image with no gradients
+
+.image-background {
   background: url('../images/workspace.jpg') no-repeat top center;
   background-size: cover;
 } */
 
 .image-background { 
   background: linear-gradient(0deg, #fff, transparent), url('../images/workspace.jpg');
-background-size: cover;
+  background-size: cover;
 }
 
 .main-nav {
@@ -109,11 +111,10 @@ section ul {
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 100px;
+  display: grid;
+  /* padding-bottom: 100px;
   padding-left: 125px;
-  padding-right: 125px;
+  padding-right: 125px; */
   grid-gap: 1rem;
   margin: auto;
   background-image: linear-gradient(white, grey);
@@ -157,11 +158,6 @@ footer {
   height: 35px;
 }
 
-.img-yt {
-  width: 3%;
-  height: 3%;
-}
-
 @media screen and (max-width: 1325px) {
 
   .flex-container {
@@ -176,8 +172,11 @@ footer {
     white-space: nowrap;
     padding-left: 0px;
     border-bottom: 4px solid rgb(49, 45, 45);
+    min-width: 250px;
 
   }
+ 
+
 }
 
 
