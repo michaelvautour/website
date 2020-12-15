@@ -79,6 +79,24 @@ h3 {
   padding-bottom: 15px;
 }
 
+.btn {
+  font-size: 0.85em;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  background-color: #278da4;
+  border-radius: 0.35em;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.btn:hover {
+  background-color: rgba(39, 141, 164, 0.8);
+}
+
 
 section ul {
   padding: 25px;  
@@ -102,48 +120,48 @@ section ul {
 .center {
   text-align: center;
 }
+
 .prop-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  align-items: center;
+  width: 200px;
+  height: 200px;
 }
 
-.flex-container {
+.grid {
   display: grid;
-  /* padding-bottom: 100px;
-  padding-left: 125px;
-  padding-right: 125px; */
-  grid-gap: 1rem;
-  margin: auto;
-  background-image: linear-gradient(white, grey);
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
 }
 
+div p {
+  color: black;
+  font-size: 1rem;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;;
+}
 
-.flex-item {
-  /* width: 100%; */
-  /* margin: 75px; */
-  border-bottom: 4px solid #ccc;
-  /* border: 4px solid #ccc;
-  background-color: rgba(255, 255, 255, .8); */
-  padding: .5rem 1rem 1rem;
-  /* padding-left: 175px; */
-  min-width: 450px;
-  list-style-position: inside;
-  justify-content: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em 1em;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25em;
+}
 
- } 
  
 .title-padding {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 footer {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -158,7 +176,7 @@ footer {
   height: 35px;
 }
 
-@media screen and (max-width: 1325px) {
+/* @media screen and (max-width: 1325px) {
 
   .flex-container {
     flex-direction: column;
@@ -177,7 +195,7 @@ footer {
   }
  
 
-}
+} */
 
 
 
