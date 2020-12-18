@@ -177,6 +177,9 @@ footer {
   height: 35px;
 }
 
+.img-social:hover {
+  opacity: .7;
+}
 /*  below is a test media query to see if I like the new menus for a mobile look  */
 @media screen and (max-width: 550px) {
 
