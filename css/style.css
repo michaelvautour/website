@@ -31,6 +31,7 @@
 .li-nav {
   display: block;
   float: left;
+  font-size: 1.25em;
 }
 
 .li-a-nav {
@@ -175,6 +176,27 @@ footer {
   width: 35px;
   height: 35px;
 }
+
+/*  below is a test media query to see if I like the new menus for a mobile look  */
+@media screen and (max-width: 550px) {
+
+  .main-nav {
+    position: initial;
+  }
+
+.li-nav {
+  display: block;
+  float: none;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 5px;
+}
+
+.brdr-top {
+  border-top: 2px solid grey;
+}
+}
+
 
 /* @media screen and (max-width: 1325px) {
 
