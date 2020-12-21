@@ -15,39 +15,14 @@ body {
 }
 
 #search {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    display: block;
+    margin: 50px auto;
     text-align: center;
-    min-width: 150px;
-    width: 80%;
+    min-width: 175px;
+    width: 55%;
     height: 40px;
-    margin-left: 100px
 }
 
 img {
     border: 5px dotted grey;
 }
-
-@media only screen and (max-width: 1700px) {
-    #search {
-        width: 60%;
-    }
-  }
-
-@media only screen and (max-width: 1150px) {
-    #search {
-        width: 50%;
-    }
-  }
-
-@media only screen and (max-width: 900px) {
-    #search {
-        width: 20%;
-        margin-left: 25px;
-    }
-
-    body {
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-  }
