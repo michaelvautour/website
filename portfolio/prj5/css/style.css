@@ -3,8 +3,12 @@
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     row-gap: 20px;
     column-gap: 20px;
-    max-width: 90%;
+    /* max-width switched between 85-90% to pixel based to ensure no more then 4 columns on higher screen sizes*/
+    max-width: 1024px;
     margin: 0 auto;
+    /*adding padding so smaller screen sizes wouldn't feel too bunched on margins */
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .center {
@@ -16,17 +20,17 @@
     margin: 50px auto;
     text-align: center;
     min-width: 175px;
-    width: 55%;
+    width: 45%;
     height: 40px;
 }
 
 img {
-    border: 5px dotted grey;
+    /* border: 5px dotted grey; */
     max-width: 100%;
 }
 
 @media only screen and (max-width: 550px) {
     .gallery {
-        margin-left: 33%;
+        margin-left: 23%;
     }
   }
