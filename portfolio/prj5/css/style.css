@@ -1,13 +1,10 @@
-
-body {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .center {
@@ -25,4 +22,11 @@ body {
 
 img {
     border: 5px dotted grey;
+    max-width: 100%;
 }
+
+@media only screen and (max-width: 550px) {
+    .gallery {
+        margin-left: 33%;
+    }
+  }
