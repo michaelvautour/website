@@ -80,6 +80,10 @@ h3 {
   padding-bottom: 15px;
 }
 
+/* p {
+  margin-top: auto;;
+} */
+
 .btn {
   font-size: 0.85em;
   color: #fff;
@@ -123,11 +127,9 @@ section ul {
 }
 
 .prop-img {
-  /* margin-left: auto;
-  margin-right: auto; */
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .grid {
