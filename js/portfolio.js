@@ -33,7 +33,8 @@ function updatePortfolio() {
         </div>    
         `;
     }
-    return document.querySelector('div').innerHTML = portf;
+    portf = `<h2 class="title-padding"><a id="Portfolio">Portfolio</a></h2>` + `<div class="grid">` + portf + `</div>`;
+    return document.querySelector('main').innerHTML = portf;
 }
 
 updatePortfolio();
