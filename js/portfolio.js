@@ -37,3 +37,8 @@ function updatePortfolio() {
 }
 
 updatePortfolio();
+
+
+
+
+
