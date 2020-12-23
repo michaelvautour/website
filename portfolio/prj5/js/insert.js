@@ -32,10 +32,14 @@ const d_caption_gallery = [
   function rgbColor() {
     return Math.floor(Math.random() * 256);
   }
-  
+
+  // creates photo gallery image layout with appropriate tags
   function createGallery() {
     let items = '';
     for (let i = 0; i < d_caption_gallery.length; i++) {
+      // used ${} for image names, however removed 0 from image names as I couldn't figure out how to pull
+      // those in without creating additional arrays for image lists, but wanted to minimize JS arrays.
+      // will look out for topics in future to see if a method could handle? (failed with if/else statements)
       items += `
         <a href="images/${i+1}.jpg" data-caption="${d_caption_gallery[i]}"</a>
         <img src="images/thumbnails/${i+1}.jpg" alt="${img_alt[i]}" style="border: 5px dotted rgb(${rgbColor()}, ${rgbColor()}, ${rgbColor()})">
