@@ -1,27 +1,22 @@
-const urlSocial = [
-    "https://github.com/michaelvautour",
-    "https://twitter.com/mikevautourdev",
-    "https://ca.linkedin.com/in/michael-vautour-26832871"
-]
+const social = [
+    {url: "https://github.com/michaelvautour",
+    img: "github.svg",
+    logoAlt: "Github Logo"},
 
-const imgSocial = [
-    "github.svg",
-    "Twitter_Social_Icon_Circle_Color.svg",
-    "linkedin.svg"
-]
+    {url: "https://twitter.com/mikevautourdev",
+    img: "Twitter_Social_Icon_Circle_Color.svg",
+    logoAlt: "Twitter Logo"},
 
-const logo_Social = [
-    "Github Logo",
-    "Twitter Logo",
-    "LinkedIn Logo"
-]
-
+    {url: "https://ca.linkedin.com/in/michael-vautour-26832871",
+    img: "linkedin.svg",
+    logoAlt: "LinkedIn Logo"}
+];
 
 function updateSocial() {
     let soci = '';
-    for (i = 0; i < urlSocial.length; i++ ) {
+    for (i = 0; i < social.length; i++ ) {
         soci += `
-        <a href=${urlSocial[i]} target="_blank" rel="noreferrer"><img src="images/${imgSocial[i]}" class="img-social" alt="${logo_Social[i]}"></a>
+        <a href=${social[i].url} target="_blank" rel="noreferrer"><img src="images/${social[i].img}" class="img-social" alt="${social[i].logoAlt}"></a>
         `
     }
     soci += "<p>&copy; Michael Vautour, 2020</p>"
