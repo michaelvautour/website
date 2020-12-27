@@ -40,6 +40,10 @@
   border-top: 2px solid grey;
   }
 
+.lrg_scrn {
+  display: none;    
+}
+
 header {
   text-align: center;
   padding-top: 60px;
@@ -197,8 +201,9 @@ footer {
 .brdr-top {
   border-top: none;
   }
-    
+
 }
+
 @media screen and (min-width: 1024px) {
 
 header .photo-alter {
