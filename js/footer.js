@@ -15,7 +15,7 @@ const socials = [
 function updateSocial() {
     let soci = '';
     for (i = 0; i < socials.length; i++ ) {
-        let social = socials[i]
+        let social = socials[i];
         soci += `
         <a href=${social.url} target="_blank" rel="noreferrer"><img src="images/${social.img}" class="img-social" alt="${social.logoAlt}"></a>
         `
