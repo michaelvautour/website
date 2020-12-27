@@ -1,4 +1,4 @@
-const social = [
+const socials = [
     {url: "https://github.com/michaelvautour",
     img: "github.svg",
     logoAlt: "Github Logo"},
@@ -14,9 +14,10 @@ const social = [
 
 function updateSocial() {
     let soci = '';
-    for (i = 0; i < social.length; i++ ) {
+    for (i = 0; i < socials.length; i++ ) {
+        let social = socials[i]
         soci += `
-        <a href=${social[i].url} target="_blank" rel="noreferrer"><img src="images/${social[i].img}" class="img-social" alt="${social[i].logoAlt}"></a>
+        <a href=${social.url} target="_blank" rel="noreferrer"><img src="images/${social.img}" class="img-social" alt="${social.logoAlt}"></a>
         `
     }
     soci += "<p>&copy; Michael Vautour, 2020</p>"

@@ -1,4 +1,4 @@
-const gallery = [
+const gallerys = [
     {title: "Generic Portfolio Site",
      description: "A generic portfolio site built in mobile first, contains 3 different view ports for various screen sizes",
      techUsed: "HTML, CSS"
@@ -22,13 +22,14 @@ const gallery = [
 
 function updatePortfolio() {
     let portf = '';
-    for (i = 0; i < gallery.length; i++ ) {
+    for (i = 0; i < gallerys.length; i++ ) {
+        let gallery = gallerys[i];
         portf += `
         <div class="card">
-        <h3>${gallery[i].title}</h3>
-        <a href="./portfolio/prj${i+2}/index.html" target="_blank" rel="noreferrer"><img src="images/port_proj_${i+2}.jpg" alt="Thumbnail for project ${gallery[i].title}" class="prop-img"></a>
-        <p><strong>Description:</strong> ${gallery[i].description}</p>
-        <p>Technologies used: ${gallery[i].techUsed}</p>
+        <h3>${gallery.title}</h3>
+        <a href="./portfolio/prj${i+2}/index.html" target="_blank" rel="noreferrer"><img src="images/port_proj_${i+2}.jpg" alt="Thumbnail for project ${gallery.title}" class="prop-img"></a>
+        <p><strong>Description:</strong> ${gallery.description}</p>
+        <p>Technologies used: ${gallery.techUsed}</p>
         <a class="btn" href="./portfolio/prj${i+2}/index.html" target="_blank" >View Project</a>        
         </div>    
         `;
