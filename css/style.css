@@ -45,8 +45,8 @@
 
   header .photo-alter {
     margin-top: 1px;
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     border-radius: 50%;
     border: 5px solid white;
     transition: all .5s;
@@ -171,6 +171,7 @@ footer {
 .img-social:hover {
   opacity: .7;
 }
+
 /*  below is a test media query to see if I like the new menus for a mobile look  */
 @media screen and (max-width: 550px) {
 
@@ -189,4 +190,13 @@ footer {
 .brdr-top {
   border-top: 2px solid grey;
 }
+}
+
+@media screen and (max-width: 1024px) {
+
+header .photo-alter {
+  width: 45%;
+  height: 45%;
+}
+
 }
