@@ -102,12 +102,16 @@ section ul {
 }
 
 .tag {
-  color: white;
+  color: midnightblue;
   padding: 2.5px;
   border-radius: 2.5px;
   display: table;
   margin: 2.5px auto;
   } 
+
+ header p {
+    font-size: 1.25em;
+  }
 
 
 .center {
