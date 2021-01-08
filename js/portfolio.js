@@ -17,7 +17,12 @@ const gallerys = [
   {title: "Image Lookup Gallery",
   description: "Search for photo meta data, BaguetteBox for full views. Site content through JS & arrays",
   techUsed: "HTML, CSS, JavaScript"
- }
+ },
+ 
+ {title: "Create a List",
+ description: "Create any list, to-do, grocery, etc.",
+ techUsed: "HTML, CSS, JavaScript"
+}
 ]
 
 function updatePortfolio() {

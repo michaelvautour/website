@@ -1,0 +1,28 @@
+
+.up, .down, .remove {
+    color: white;
+    margin-left: 15px;
+}
+
+.up {
+    background-color: green;
+}
+
+.down {
+    background-color: blue;
+
+}
+
+.remove {
+    background-color: red;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.addItemButton {
+    background-color: blueviolet;
+    color: white;
+
+}
