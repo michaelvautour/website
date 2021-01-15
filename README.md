@@ -8,4 +8,5 @@ Feature List:
 
 Need to include newer nav (ham menu)
 Project 6 when complete
-Where can I replace some elements to include createElement instead?
+Where can I replace some elements to include createElement instead by?
+See if I can optimize project images 
