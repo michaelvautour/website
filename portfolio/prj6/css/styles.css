@@ -79,8 +79,8 @@ button {
 
 .letter {
   font-size: var(--font-size-medium);
-  height: 65px;
-  width: 65px;
+  height: 50px;
+  width: 50px;
   padding: 20px 1px 0 1px;
   margin-right: 2px;
   color: transparent;
@@ -162,4 +162,27 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+@media screen and (max-width: 768px) {
+
+  h2 {
+    font-size: 15px;
+  }
+  /* .qwerty {
+    height: 15px;
+    width: 15px;
+    } */
+
+button {
+  margin: 1px;
+  padding: .5rem;
+}
+
+.letter {
+  font-size: var(--font-size-medium);
+  height: 25px;
+  width: 25px;
+  padding: 1px 1px 0 1px;
+}
 }
