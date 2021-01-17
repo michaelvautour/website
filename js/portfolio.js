@@ -19,7 +19,7 @@ const gallerys = [
   techUsed: "HTML, CSS, JavaScript"
  },
 
- {title: "Guessing Game",
+ {title: "Word Guessing Game",
  description: "Word guessing game, using JavaScript for DOM manipulation",
  techUsed: "HTML, CSS, JavaScript"
 }
