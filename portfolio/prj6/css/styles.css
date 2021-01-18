@@ -169,10 +169,6 @@ button {
   h2 {
     font-size: 15px;
   }
-  /* .qwerty {
-    height: 15px;
-    width: 15px;
-    } */
 
 button {
   margin: 1px;
@@ -180,7 +176,6 @@ button {
 }
 
 .letter {
-  font-size: var(--font-size-medium);
   height: 25px;
   width: 25px;
   padding: 1px 1px 0 1px;

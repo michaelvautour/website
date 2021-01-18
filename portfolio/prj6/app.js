@@ -6,7 +6,6 @@ const button = document.getElementsByTagName('button');
 const heartLoss = document.querySelectorAll("img");
 const overlay = document.getElementById('overlay');
 const h2 = document.getElementsByClassName('title')[0];
-
 //Game questions, add/edit additional ones as needed
 //game is index so it will handle any amount of additional phrases
 const phrases = [
@@ -18,6 +17,8 @@ const phrases = [
 ];
 
 missedLetter = 0;
+//setting this value so I can display on Win/loss screen the actual value
+indexOfPhrase = 0;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -28,6 +29,7 @@ function getRandomInt(max) {
 gameStart.addEventListener('click', (e) => {
     document.getElementById('overlay').style.display = 'none';
     addPhraseToDisplay();
+    phraseLineBreak();
 });
 
 //returns a random phrase from an array for the game
@@ -76,12 +78,12 @@ const checkWin = () => {
     if (letterNum.length === showNum.length) {
         overlay.classList.add('win');
         overlay.style.display = "flex";
-        h2.textContent = "Congrats! You Win! Refresh the browser to play again!";
+        h2.innerHTML = `Congrats! You Win! Refresh the browser to play again! <p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
 
     } else if (missedLetter > 4) {
         overlay.classList.add('lose');
         overlay.style.display = "flex";
-        h2.textContent = "Sorry, you lose. Refresh the browser to play again!";
+        h2.innerHTML = `Sorry, you lose. Refresh the browser to play again! <p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
     }
 }
 
@@ -102,3 +104,12 @@ qwerty.addEventListener('click', (e) => {
             }
 }
 });
+
+function phraseLineBreak() {
+    let liSpaces = document.getElementsByClassName('space');
+    let createBreak = document.createElement('br')
+    for (i = 0; i < liSpaces.length; i++) {
+        let liSpace = liSpaces[i];
+        liSpace.parentElement.insertBefore(createBreak.cloneNode(true), liSpace.nextSibling);
+}
+}
