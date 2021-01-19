@@ -94,6 +94,7 @@ qwerty.addEventListener('click', (e) => {
    
     if (pButton.tagName === "BUTTON" && pButton.classList != "chosen") {
         pButton.classList.add('chosen');
+        pButton.disabled = 'true';
         let checkedLetter = checkLetter(selectedChar);
             if ( checkedLetter === selectedChar ) {
                 checkWin();
