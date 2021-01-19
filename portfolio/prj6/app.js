@@ -4,6 +4,7 @@ const ul = document.querySelector('ul')
 const gameStart = document.querySelector('.btn__reset');
 const button = document.getElementsByTagName('button');
 const heartLoss = document.querySelectorAll("img");
+const tries = document.getElementsByClassName('tries');
 const overlay = document.getElementById('overlay');
 const h2 = document.getElementsByClassName('title')[0];
 //Game questions, add/edit additional ones as needed
@@ -24,13 +25,36 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
+
 // listen for the start game button to be pressed, update so main screen disappears
 // and new overlay exist with phrase pulled in
 gameStart.addEventListener('click', (e) => {
+    if (overlay.className === "start") {
+        document.getElementById('overlay').style.display = 'none';
+        addPhraseToDisplay();
+        phraseLineBreak();
+    } else {
+        resetGame();
+}
+});
+
+const resetGame = () => {
+    overlay.className ='';
+    overlay.className ='start';
+    ul.innerHTML = '';
     document.getElementById('overlay').style.display = 'none';
+    missedLetter = 0;
+    indexOfPhrase = 0;
+    for (i = 0; i < tries.length; i++) {
+        heartLoss[i].src="images/liveHeart.png";
+    }
+    for (i = 0; i < button.length; i++) {
+        button[i].disabled = false;
+        button[i].className ='';
+    }
     addPhraseToDisplay();
     phraseLineBreak();
-});
+}
 
 //returns a random phrase from an array for the game
 const getRandomPhraseAsArray = arr => {
@@ -78,12 +102,12 @@ const checkWin = () => {
     if (letterNum.length === showNum.length) {
         overlay.classList.add('win');
         overlay.style.display = "flex";
-        h2.innerHTML = `Congrats! You Win! Refresh the browser to play again! <p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
+        h2.innerHTML = `Congrats, You Win!<p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
 
     } else if (missedLetter > 4) {
         overlay.classList.add('lose');
         overlay.style.display = "flex";
-        h2.innerHTML = `Sorry, you lose. Refresh the browser to play again! <p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
+        h2.innerHTML = `Sorry, you lose.<p>The phrase was: ${phrases[indexOfPhrase]}</p>`;
     }
 }
 
@@ -95,6 +119,7 @@ qwerty.addEventListener('click', (e) => {
     if (pButton.tagName === "BUTTON" && pButton.classList != "chosen") {
         pButton.classList.add('chosen');
         pButton.disabled = 'true';
+
         let checkedLetter = checkLetter(selectedChar);
             if ( checkedLetter === selectedChar ) {
                 checkWin();
@@ -113,4 +138,6 @@ function phraseLineBreak() {
         let liSpace = liSpaces[i];
         liSpace.parentElement.insertBefore(createBreak.cloneNode(true), liSpace.nextSibling);
 }
+
+
 }
