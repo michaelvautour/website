@@ -124,7 +124,7 @@ qwerty.addEventListener('click', (e) => {
             if ( checkedLetter === selectedChar ) {
                 checkWin();
             } else {
-                heartLoss[missedLetter].src="images/explosion.png";
+                heartLoss[missedLetter].src="images/shipexplosion.png";
                 missedLetter +=1;
                 checkWin();
             }
