@@ -46,7 +46,7 @@ const resetGame = () => {
     missedLetter = 0;
     indexOfPhrase = 0;
     for (i = 0; i < tries.length; i++) {
-        heartLoss[i].src="images/liveHeart.png";
+        heartLoss[i].src="images/pegasus.png";
     }
     for (i = 0; i < button.length; i++) {
         button[i].disabled = false;
@@ -124,7 +124,7 @@ qwerty.addEventListener('click', (e) => {
             if ( checkedLetter === selectedChar ) {
                 checkWin();
             } else {
-                heartLoss[missedLetter].src="images/lostHeart.png";
+                heartLoss[missedLetter].src="images/explosion.png";
                 missedLetter +=1;
                 checkWin();
             }
