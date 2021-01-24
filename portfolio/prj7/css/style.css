@@ -495,18 +495,22 @@ input[type=text] {
     color: grey;
     opacity: .5;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .button-set-primary {
     grid-column-start: 1;
     grid-row-start: 4;
+    width: 150px;
+
 }
 
 .button-set-disabled {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 4;
+    width: 150px;
+    margin-left: 70%;
 }
-
 /* Code modified based on w3schools how-to area: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch 
     Below is for rounded switches
 */
