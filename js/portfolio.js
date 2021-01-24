@@ -22,7 +22,13 @@ const gallerys = [
  {title: "Word Guessing Game",
  description: "Word guessing game, using JavaScript for DOM manipulation",
  techUsed: "HTML, CSS, JavaScript"
+},
+
+{title: "Social Traffic App",
+description: "Traffic charting app, includes chart.JS library and all vanilla CSS styling (Mobile Version)",
+techUsed: "HTML, CSS, JavaScript"
 }
+
 ]
 
 function updatePortfolio() {
