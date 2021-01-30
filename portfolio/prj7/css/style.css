@@ -19,6 +19,11 @@ header .bell-icn {
     fill: white;
   }
 
+header .bell-icn:hover {
+    fill: orangered;
+    width: 30px;
+}
+
 /* Alert box */
 
 .alert {
@@ -209,7 +214,11 @@ input[type=search] {
 .daily,
 .mobile,
 .social-container,
-.alert-settings {
+.alert-settings,
+.newMembers,
+.recent-activity,
+.message,
+.settings {
     padding-left: 30px;
     padding-right: 30px;
     border-bottom: 1px solid lightgrey;
@@ -467,7 +476,6 @@ input[type=text] {
     text-transform: uppercase;
     padding: 0.75em 1.5em;
     border-radius: .75em;
-    /* display: inline-block; */
     text-decoration: none;
     margin-top: auto;
 }
@@ -495,22 +503,19 @@ input[type=text] {
     color: grey;
     opacity: .5;
     margin-top: 10px;
-    margin-right: 10px;
 }
 
 .button-set-primary {
     grid-column-start: 1;
     grid-row-start: 4;
-    width: 150px;
-
 }
 
 .button-set-disabled {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-row-start: 4;
-    width: 150px;
-    margin-left: 70%;
+    grid-row-end: 6
 }
+
 /* Code modified based on w3schools how-to area: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch 
     Below is for rounded switches
 */
@@ -571,66 +576,147 @@ input:checked + .slider:before {
 }
 
 
+
 /* Media Queries for larger screens */
 
-/* @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 55px 1fr;
-        grid-template-areas:
-        "header header"
-        "nav main";
-    } */
+@media (min-width: 768px) {
+.grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+    "header header"
+    "nav main";
+}
 
-    /* .main { */
-        /* display: grid; */
-        /* grid-template-columns: 95%;
-    } */
+.main { 
+    display: grid;
+    grid-template-columns: 95%;
+}
 
-    /* .traffic, .social {
-        grid-column: 1 / span 2;
-    } */
+.widgets{
+    display: flex;
+    width: 90vw;
+}
 
-    /* .daily, .members, .message{
-        grid-column: 1 / span 1;
-    } */
-/* 
-    .mobile, .activity, .settings {
-        grid-column: 2 / span 1;
-    } */
+.daily,
+.mobile {
+    min-width: 45vw;
+}
 
-    /* nav {
-        padding-top: 25px;
-    }
-    nav a {
-        padding: 0;
-        padding-left: 5px;
-    }
+.social-container {
+    display: grid;
+    max-width: 90vw;
+}
 
-    nav img {
-        padding-left: 5px;
-    }
+.social-stats {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.facebook {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
 
-    .traffic-nav {
-        text-align: right;
-    }
+.google {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
 
-    .traffic-nav-link {
-        font-size: 0.85em; */
+.twitter {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
 
+.social-platform,
+.social-number {
+    margin-left: 115px;
+}
+
+.social-image svg {
+    margin-left: 25px;
+}
+
+.members-activity {
+    display: flex;
+    width: 90vw;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 
 }
 
-/* @media (min-width: 1024px) {
-    .widget-container-full, .widget-container-half {
-        width: 80vw;
-    }
+.members,
+.recent-activity {
+    min-width: 45vw;
+}
 
-    .headline {
+.members-container {
+    height: 6.1em;
+
+}
+.recent-container {
+    height: 5.4em;
+}
+
+.recent-activity {
+    padding-top: 10px;
+}
+.recent-activity,
+.newMembers {
+    border-bottom: none;
+}
+.members {
+    border-right: 1px solid lightgrey;
+}
+
+.messaging{
+    display: flex;
+    width: 90vw;
+}
+
+.message,
+.settings {
+    min-width: 45vw;
+}
+
+.message {
+    border-right: 1px solid lightgrey;
+}
+
+.button-set-primary,
+.button-set-disabled {
+    margin-top: 28px;
+}
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    /* .headline {
         text-align: left;
         padding-left: 35px;
-    }
+    } */
 
-    .main-header {
-        display: flex;
-    }
-}} */
+.main-header {
+    display: grid;
+}
+
+.headline {
+    align-content: left;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.main-header-search {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    min-width: 500px;
+}
+
+.traffic-nav {
+    text-align: right;
+}
+
+}

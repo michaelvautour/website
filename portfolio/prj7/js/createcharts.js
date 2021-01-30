@@ -59,14 +59,6 @@ let myChart = new Chart(chartArea, {
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 206, 86, 0.2)'
             ],
-            // borderColor: [
-            //     'rgba(255, 99, 132, 1)',
-            //     'rgba(54, 162, 235, 1)',
-            //     'rgba(255, 206, 86, 1)',
-            //     'rgba(75, 192, 192, 1)',
-            //     'rgba(153, 102, 255, 1)',
-            //     'rgba(255, 159, 64, 1)'
-            // ],
             borderWidth: 1
         }]
     },
@@ -108,14 +100,6 @@ let dailyChart = new Chart(dailyChartArea, {
                 'rgba(54, 162, 235, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
             ],
-            // borderColor: [
-            //     'rgba(255, 99, 132, 1)',
-            //     'rgba(54, 162, 235, 1)',
-            //     'rgba(255, 206, 86, 1)',
-            //     'rgba(75, 192, 192, 1)',
-            //     'rgba(153, 102, 255, 1)',
-            //     'rgba(255, 159, 64, 1)'
-            // ],
             borderWidth: 1
         }]
     },
@@ -198,9 +182,8 @@ function updateChart(arr, index) {
 
 chartToggle.addEventListener('click', (e) => {
     const pButton = e.target;
-    let selectedButton = pButton.textContent
-    document.querySelector('.chartSelected').classList.remove('chartSelected')
-    if (pButton.textContent === selectedButton && pButton.classList != "chartSelected") {
+    if (pButton.tagName === "LI" && pButton.classList != "chartSelected") {
+        document.querySelector('.chartSelected').classList.remove('chartSelected')
         pButton.classList.add('chartSelected');
         if (pButton.textContent === "Hourly") {
             updateChart(timingTraffic, 0)
@@ -216,9 +199,8 @@ chartToggle.addEventListener('click', (e) => {
 
 chartTypeToggle.addEventListener('click', (e) => {
     const pButton = e.target;
-    let selectedButton = pButton.textContent
-    document.querySelector('.chartTypeselected').classList.remove('chartTypeselected')
-    if (pButton.textContent === selectedButton && pButton.classList != "chartTypeselected") {
+    if (pButton.tagName === "LI" && pButton.classList != "chartTypeselected") {
+        document.querySelector('.chartTypeselected').classList.remove('chartTypeselected')
         pButton.classList.add('chartTypeselected');
         if (pButton.textContent === "pie") {
             myChart.config.type = pButton.textContent

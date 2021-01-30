@@ -27,25 +27,25 @@ const recentMemberJoins = [{
 const recentActivitys = [{
     img: "img/member-1.jpg",
     pName: "Kara Ace",
-    comment: "the importance of So Say We All",
+    comment: "said So Say We All",
     time: "2 hours ago"
     },
 
     {img: "img/member-2.jpg",
     pName: "Jeffery Sheridan",
-    comment: "how awesome Babylon 5 characters are!",
+    comment: "B5 is the best!",
     time: "3 hours ago"
     },
 
     {img: "img/member-3.jpg",
     pName: "Eliza Curator",
-    comment: "how Spike & Angel should join the avengers",
+    comment: "Spike & Angel avengers?",
     time: "5 hours ago"
     },
 
     {img: "img/member-4.jpg",
     pName: "Sami Tarsa",
-    comment: "how Castiel faced off against Chuck",
+    comment: "Castiel V. Chuck",
     time: "7 hours ago"
     }
 ];

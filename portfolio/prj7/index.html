@@ -95,6 +95,7 @@
         </div>
     </section>
 
+<div class="widgets">
     <section class="daily">
         <h3>Daily traffic</h3>
         <div class="widget-container-half">
@@ -108,13 +109,13 @@
             <canvas id="mobile-chart"></canvas>
         </div>
     </section>
-
+</div>
 <!-- END OF CHARTS-->
 
 <!-- Social Media Containers -->
     <div class="social-container">
-        <h3>Social Stats</h3>
-        <div class="social-image">
+        <h3 class="social-stats">Social Stats</h3>
+        <div class="social-image twitter">
             <svg viewBox="-15 -17 60 60">
             <path class="social-icon" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
             c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
@@ -124,10 +125,9 @@
             </svg>
             <p class="social-platform">Twitter</p>
             <p class="social-number">10,345</p>
-      </div>
+        </div>
 
-
-        <div class="social-image">
+        <div class="social-image facebook">
             <svg viewBox="-15 -15 90 90">
                 <path class="social-icon" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  
                 c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/>
@@ -136,7 +136,7 @@
             <p class="social-number">8,739</p>
         </div>
     
-        <div class="social-image">
+        <div class="social-image google">
             <svg viewBox="-15 -17 60 60">
                 <path class="social-icon" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
                     c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
@@ -159,9 +159,12 @@
             <p class="social-number">2,530</p>
 
         </div>
+    </div>
 
     <!-- New members widget -->
-    <section class="members">
+    <div class='members-activity'>
+        
+        <section class="members">
         <h3 class="newMembers">New Members</h3>
 
 
@@ -174,8 +177,10 @@
 
 
     </section>
-
+    </div>
     <!-- messaging widget -->
+    <div class="messaging">
+
     <section class="message">
         <h3>Messager User</h3>
 
@@ -188,7 +193,6 @@
     </section>
 
     <!--  local settings widget   -->
-
     <section class="settings">
         <h3>Settings</h3>
         <div class="section-widget">
@@ -216,6 +220,8 @@
             <button class="button-set-disabled" id="cancel">Cancel</button>
         </div>
     </section>
+
+</div>
 <br>
 <br><br><br><br><br>
 <br>
@@ -223,6 +229,7 @@
 </main>
 
 </body>
-<script src="app.js"></script>
-<script src="createcharts.js"></script>
+<script src="js/app.js"></script>
+<script src="js/createcharts.js"></script>
+<script src="js/messages.js"></script>
 </html>
