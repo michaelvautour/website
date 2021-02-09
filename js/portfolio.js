@@ -1,37 +1,48 @@
-const gallerys = [
-    {title: "Generic Portfolio Site",
-     description: "A generic portfolio site built in mobile first, contains 3 different view ports for various screen sizes",
-     techUsed: "HTML, CSS"
-    },
+// const gallerys = [
+//     {title: "Generic Portfolio Site",
+//      description: "A generic portfolio site built in mobile first, contains 3 different view ports for various screen sizes",
+//      techUsed: "HTML, CSS"
+//     },
 
-    {title: "Registration Form",
-    description: "Registration form that operates in two view port screen sizes, no backend to capture form submission",
-    techUsed: "HTML, CSS"
-   },
+//     {title: "Registration Form",
+//     description: "Registration form that operates in two view port screen sizes, no backend to capture form submission",
+//     techUsed: "HTML, CSS"
+//    },
 
-   {title: "Utilizing SASS",
-   description: "Mobile responsive site using CSS preprocessor SASS, articulating flex box capabilities",
-   techUsed: "HTML, CSS, SASS"
-  },
+//    {title: "Utilizing SASS",
+//    description: "Mobile responsive site using CSS preprocessor SASS, articulating flex box capabilities",
+//    techUsed: "HTML, CSS, SASS"
+//   },
 
-  {title: "Image Lookup Gallery",
-  description: "Search for photo meta data, BaguetteBox for full views. Site content through JS & arrays",
-  techUsed: "HTML, CSS, JavaScript"
- },
+//   {title: "Image Lookup Gallery",
+//   description: "Search for photo meta data, BaguetteBox for full views. Site content through JS & arrays",
+//   techUsed: "HTML, CSS, JavaScript"
+//  },
 
- {title: "Word Guessing Game",
- description: "Word guessing game, using JavaScript for DOM manipulation",
- techUsed: "HTML, CSS, JavaScript"
-},
+//  {title: "Word Guessing Game",
+//  description: "Word guessing game, using JavaScript for DOM manipulation",
+//  techUsed: "HTML, CSS, JavaScript"
+// },
 
-{title: "Social Traffic App",
-description: "Traffic charting app, includes chart.JS library and all vanilla CSS styling (Mobile Version)",
-techUsed: "HTML, CSS, JavaScript"
-}
+// {title: "Social Traffic App",
+// description: "Traffic charting app, includes chart.JS library and all vanilla CSS styling (Mobile Version)",
+// techUsed: "HTML, CSS, JavaScript"
+// }
+// ]
 
-]
 
-function updatePortfolio() {
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+	if(xhr.readyState === 4) {
+    let gallerys = JSON.parse(xhr.responseText)
+    updatePortfolio(gallerys)
+	}
+};
+
+xhr.open('GET', 'json/portfolio.json');
+xhr.send();
+
+function updatePortfolio(gallerys) {
     let portf = '';
     for (i = 0; i < gallerys.length; i++ ) {
         let gallery = gallerys[i];
@@ -48,5 +59,3 @@ function updatePortfolio() {
     portf = `<h2 class="title-padding"><a id="Portfolio">Portfolio</a></h2>` + `<div class="grid">` + portf + `</div>`;
     return document.querySelector('main').innerHTML = portf;
 }
-
-updatePortfolio();
