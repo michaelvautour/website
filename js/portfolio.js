@@ -1,13 +1,13 @@
-const xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-	if(xhr.readyState === 4) {
-    let gallerys = JSON.parse(xhr.responseText)
+const xhrGallery = new XMLHttpRequest();
+xhrGallery.onreadystatechange = function () {
+	if(this.readyState === 4) {
+    let gallerys = JSON.parse(xhrGallery.responseText)
     updatePortfolio(gallerys)
 	}
 };
 
-xhr.open('GET', 'json/portfolio.json');
-xhr.send();
+xhrGallery.open('GET', 'json/portfolio.json');
+xhrGallery.send();
 
 function updatePortfolio(gallerys) {
     let portf = '';
