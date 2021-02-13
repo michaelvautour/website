@@ -1,51 +1,31 @@
-const d_caption_gallery = [
-    "I love hay bales. Took this snap on a drive through the countryside past some straw fields.",
-    "The lake was so calm today. We had a great view of the snow on the mountains from here.",
-    "I hiked to the top of the mountain and got this picture of the canyon and trees below.",
-    "It was amazing to see an iceberg up close, it was so cold but didn’t snow today.",
-    "The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.",
-    "Fall is coming, I love when the leaves on the trees start to change color.",
-    "I drove past this plantation yesterday, everything is so green!",
-    "My summer vacation to the Oregon Coast. I love the sandy dunes!",
-    "We enjoyed a quiet stroll down this countryside lane.",
-    "Sunset at the coast! The sky turned a lovely shade of orange.",
-    "I did a tour of a cave today and the view of the landscape below was breathtaking.",
-    "I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."
-  ]
+  const xhrGalleries = new XMLHttpRequest();
+  xhrGalleries.onreadystatechange = function () {
+      if(this.readyState === 4) {
+          let galleries = JSON.parse(xhrGalleries.responseText);
+          createGallery(galleries);
+      }
+  }
   
-  const img_alt = [
-    "Hay Bales",
-    "Lake",
-    "Canyon",
-    "Iceberg",
-    "Desert",
-    "Fall",
-    "Plantation",
-    "Dunes",
-    "Countryside Lane",
-    "Sunset",
-    "Cave",
-    "Bluebells"
-  ]
-  
+  xhrGalleries.open('GET', 'json/imgdata.json');
+  xhrGalleries.send();
+
   // Creates a random border color around images (festive look!)
   function rgbColor() {
     return Math.floor(Math.random() * 256);
   }
 
   // creates photo gallery image layout with appropriate tags
-  function createGallery() {
+  function createGallery(galleries) {
     let items = '';
-    for (let i = 0; i < d_caption_gallery.length; i++) {
+    for (let i = 0; i < galleries.length; i++) {
       // used ${} for image names, however removed 0 from image names as I couldn't figure out how to pull
       // those in without creating additional arrays for image lists, but wanted to minimize JS arrays.
       // will look out for topics in future to see if a method could handle? (failed with if/else statements)
       items += `
-        <a href="images/${i+1}.jpg" data-caption="${d_caption_gallery[i]}"</a>
-        <img src="images/thumbnails/${i+1}.jpg" alt="${img_alt[i]}" style="border: 5px dotted rgb(${rgbColor()}, ${rgbColor()}, ${rgbColor()})">
+        <a href="images/${i+1}.jpg" data-caption="${galleries[i].name}"</a>
+        <img src="images/thumbnails/${i+1}.jpg" alt="${galleries[i].imgalt}" style="border: 5px dotted rgb(${rgbColor()}, ${rgbColor()}, ${rgbColor()})">
       `;
     }
     return document.querySelector('div').innerHTML = items;
   }
   
-  createGallery();
