@@ -17,6 +17,6 @@ function updateSocial(socials) {
         <a href=${social.url} target="_blank" rel="noreferrer"><img src="images/${social.img}" class="img-social" alt="${social.logoAlt}"></a>
         `
     }
-    soci += `<p id="Contact">&copy; Michael Vautour, 2020</p>`
+    soci += `<p id="Contact">&copy; Michael Vautour, 2021</p>`
     return document.querySelector('footer').innerHTML = soci;
 }
