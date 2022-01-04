@@ -26,7 +26,7 @@ let timingTraffic = [{
 {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     label: ['Monthly Site Traffic'],
-    data: [5000, 6350, 5100, 5550, 5250, 6550, 6750, 4800, 4950, 5850, 6750, 5650]
+    data: [5000, 6350, 5100, 5550, 5250, 6550, 6750, 4850, 4950, 5850, 6750, 5650]
 },
 ];
 
