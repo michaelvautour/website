@@ -1,0 +1,30 @@
+
+//Mixins
+
+@mixin hover-transitions {
+@each $btn-color, $color in $btn-colors {
+    #{$btn-color} {
+      background-color: $color;
+      transition: .75s;
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
+    }
+  }
+}
+
+@mixin flex-basis {
+@each $col-flexb, $flexb in $col-flexbs {
+    .#{$col-flexb} {
+      flex-basis: $flexb;
+    }
+  }
+}
+
+@mixin theme-colors {
+@each $th-col-color, $tcolor in $th-col-colors {
+    .#{$th-col-color} {
+        background-color: $tcolor;
+    }
+}
+}

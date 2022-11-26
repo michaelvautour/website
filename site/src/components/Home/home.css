@@ -1,0 +1,54 @@
+.image-background {
+  background: linear-gradient(0deg, #fff, transparent),
+    url("../../images/workspace.jpg");
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
+header .photo-alter {
+  margin-top: 1px;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: all 0.5s;
+}
+
+header .photo-alter:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* Makes the image larger so it show the full image, without it 1/2 the bottom was cut off */
+.banner-padding {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+header p {
+  font-size: 1.25em;
+}
+
+.tag {
+  color: midnightblue;
+  padding: 2.5px;
+  border-radius: 2.5px;
+  display: table;
+  margin: 2.5px auto;
+}
+
+h1 {
+  text-shadow: 4px 2px grey;
+  font-family: Snell Roundhand, cursive;
+}
+
+@media screen and (min-width: 1024px) {
+  header .photo-alter {
+    width: 25%;
+    height: 25%;
+  }
+}

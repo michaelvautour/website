@@ -1,0 +1,51 @@
+.main-nav {
+  width: 100%;
+  background: black;
+}
+
+.li-nav {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  width: 100%;
+}
+
+.li-a-nav {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.lrg_scrn {
+  display: none;
+}
+/* changes color of link when on hover */
+.li-a-hover:hover {
+  background-color: rgb(153, 150, 150);
+  color: white;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 550px) {
+  .main-nav {
+    position: fixed;
+  }
+
+  .li-nav {
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    width: initial;
+  }
+
+  .li-a-nav {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  .brdr-top {
+    border-top: none;
+  }
+}
