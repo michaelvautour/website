@@ -1,4 +1,4 @@
-export const portfolio = [
+export const portfolioData = [
   {
     id: 1,
     title: "Generic Portfolio Site",

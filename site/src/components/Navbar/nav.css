@@ -27,6 +27,14 @@
   text-decoration: underline;
 }
 
+section ul {
+  padding: 25px;
+}
+
+/* .brdr-top {
+  border-top: 2px solid grey;
+} */
+
 @media screen and (min-width: 550px) {
   .main-nav {
     position: fixed;
