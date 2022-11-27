@@ -29,3 +29,4 @@ jobs:
       - run: npm run build --if-present
     # - run: npm test
 # - add tests in later versions after working
+# - run test deploy at github -> Netlify to run build
