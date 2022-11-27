@@ -23,9 +23,15 @@ const Portfolio = () => {
                 {description}
               </p>
               <p>Technologies used: {techUsed}</p>
-              <a className="btn" href="./" target="_blank" rel="noreferrer">
+              <a
+                className="btn"
+                href={`./sites/prj${id}/index.html`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 View Project
               </a>
+              {/* Need to fix above... not routing. Might need to do react-routing? */}
             </div>
           );
         })}
