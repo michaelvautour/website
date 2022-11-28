@@ -31,7 +31,6 @@ const Portfolio = () => {
               >
                 View Project
               </a>
-              {/* Need to fix above... not routing. Might need to do react-routing? */}
             </div>
           );
         })}
