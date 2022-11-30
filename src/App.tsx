@@ -11,7 +11,6 @@ function App() {
       <Home />
       <Portfolio />
       <Footer />
-      {/* Incorporate React Router for Portfolio sites */}
     </div>
   );
 }
