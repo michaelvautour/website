@@ -42,4 +42,11 @@ export const portfolioData = [
     techUsed: "HTML, CSS, JavaScript",
     image: "./port_proj_7.jpg",
   },
+  {
+    id: 10,
+    title: "PlaceHolder Project",
+    description: "PlaceHolder Description",
+    techUsed: "React, Typescript",
+    image: "./port_proj_7.jpg",
+  },
 ];
