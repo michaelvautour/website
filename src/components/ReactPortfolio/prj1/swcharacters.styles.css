@@ -39,86 +39,37 @@ tr:hover {
   background-color: #dddddd;
 }
 
-.pumpjack {
-  width: 120px;
-  height: 200px;
-  position: relative;
+/* .btn-search {
+  height: 27.98px;
+  width: 50px;
+  margin-left: 5px;
+} */
+
+.btn-search {
+  margin-left: 5px;
+  height: 27.98px;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  border-radius: 6px;
+  border: none;
+  padding-top: 5px;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.beam {
-  width: 10px;
-  height: 100px;
-  background-color: gray;
-  position: absolute;
-  top: 50px;
-  left: 55px;
-  transform-origin: bottom center;
-  animation: pumpjack-beam 2s ease-in-out infinite;
+.btn-search:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+    0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
 }
-
-.head {
-  width: 40px;
-  height: 40px;
-  background-color: gray;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  animation: pumpjack-head 2s ease-in-out infinite;
-}
-
-.rod {
-  width: 3px;
-  height: 60px;
-  background-color: black;
-  position: absolute;
-  top: 40px;
-  left: 58px;
-  transform-origin: bottom center;
-  animation: pumpjack-rod 2s ease-in-out infinite;
-}
-
-.base {
-  width: 100px;
-  height: 10px;
-  background-color: gray;
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-}
-
-@keyframes pumpjack-beam {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes pumpjack-head {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes pumpjack-rod {
-  0% {
-    transform: scaleY(0);
-  }
-  50% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
-  }
+.btn-search:hover {
+  opacity: 50%;
 }
