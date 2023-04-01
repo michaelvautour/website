@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Future Features to consider:
+
+- New project that deals with calling API's
+- Make it so I highlight over the projects and they act like cards (card highlighting)- maybe consider removing button for view project and whole card clickable might be better user interface
+- Trying this URL to pull data in: https://swapi.dev/
+- Convert all portfolio to react components, see if that helps not storing it outside project

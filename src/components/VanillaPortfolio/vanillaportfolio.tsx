@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { portfolioData } from "../../data/portfolio";
-import { PortfolioType } from "./types";
-import "./portfolio.css";
+import { VanillaPortfolioType } from "./vanillatypes";
+import "./vanillaportfolio.css";
 
-const Portfolio = () => {
+const VanillaPortfolio = () => {
   const [data] = useState<any>(portfolioData);
 
   return (
@@ -12,7 +12,7 @@ const Portfolio = () => {
         Portfolio
       </h2>
       <div className="grid">
-        {data.map((gallery: PortfolioType) => {
+        {data.map((gallery: VanillaPortfolioType) => {
           const { id, title, description, techUsed, image } = gallery;
           return (
             <div className="card" key={id}>
@@ -39,4 +39,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default VanillaPortfolio;
