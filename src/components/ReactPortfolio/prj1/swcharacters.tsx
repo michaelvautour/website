@@ -4,12 +4,19 @@ import { useState } from "react";
 import { useFetchStarWarsPeople } from "./swcharacters.hooks";
 
 const StarWarsAPIProject = () => {
+  const [characterQuery, setCharacterQuery] = useState("");
   const [url] = useState<string>("https://swapi.dev/api/people/?search=");
   const [characterSearch, setCharacterSearch] = useState("");
   const { characters } = useFetchStarWarsPeople(url, characterSearch);
 
-  const handleInputChange = (event: any) => {
-    setCharacterSearch(event.target.value);
+  // const inputEl = useRef<HTMLInputElement>(null);
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCharacterQuery(event.target.value);
+  };
+
+  const handleButtonClick = () => {
+    setCharacterSearch(characterQuery);
   };
 
   function TableRow({
@@ -43,11 +50,17 @@ const StarWarsAPIProject = () => {
         <input
           className="input"
           type="text"
-          value={characterSearch}
+          value={characterQuery}
           onChange={handleInputChange}
           placeholder="Enter Character Name"
         />
-        {/* <button onClick={handleClick}>Click Me</button> */}
+        <button
+          className="btn-search"
+          onClick={handleButtonClick}
+          style={{ backgroundColor: "lightblue", color: "white" }}
+        >
+          Search
+        </button>
       </div>
       <table>
         <thead>
