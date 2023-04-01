@@ -24,10 +24,7 @@ const ReactPortfolio = () => {
                 {description}
               </p>
               <p>Technologies used: {techUsed}</p>
-              <Link
-                to="/components/ReactPortfolio/prj1/swcharacters"
-                target="_blank"
-              >
+              <Link to="/StarWarsAPIProject" target="_blank">
                 <button className="btn">View Project</button>
               </Link>
             </div>
