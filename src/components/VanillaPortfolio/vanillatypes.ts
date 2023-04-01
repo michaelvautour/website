@@ -1,4 +1,4 @@
-export type PortfolioType = {
+export type VanillaPortfolioType = {
   id: number;
   title: string;
   description: string;

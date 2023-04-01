@@ -1,18 +1,19 @@
 import { useState } from "react";
-import { PortfolioType } from "../Portfolio/types";
-import { portfolioData } from "../../data/portfolio";
-import "./api.css";
+import { reactPortfolioData } from "../../data/reactportfolio";
+import { ReactPortfolioType } from "./reacttypes";
+import "./reactportfolio.css";
+import { Link } from "react-router-dom";
 
-const APIProject = () => {
-  const [data] = useState<any>(portfolioData);
+const ReactPortfolio = () => {
+  const [data] = useState<any>(reactPortfolioData);
 
   return (
     <main>
       <h2 className="title-padding" id="Portfolio">
-        Portfolio
+        React Portfolio
       </h2>
       <div className="grid">
-        {data.map((gallery: PortfolioType) => {
+        {data.map((gallery: ReactPortfolioType) => {
           const { id, title, description, techUsed, image } = gallery;
           return (
             <div className="card" key={id}>
@@ -23,14 +24,12 @@ const APIProject = () => {
                 {description}
               </p>
               <p>Technologies used: {techUsed}</p>
-              <a
-                className="btn"
-                href={`./sites/prj${id}/index.html`}
+              <Link
+                to="/components/ReactPortfolio/prj1/swcharacters"
                 target="_blank"
-                rel="noreferrer"
               >
-                View Project
-              </a>
+                <button className="btn">View Project</button>
+              </Link>
             </div>
           );
         })}
@@ -39,4 +38,4 @@ const APIProject = () => {
   );
 };
 
-export default APIProject;
+export default ReactPortfolio;
