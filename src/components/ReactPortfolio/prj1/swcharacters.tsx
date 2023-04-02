@@ -46,6 +46,10 @@ const StarWarsAPIProject = () => {
       <h2 className="title-padding" id="Portfolio">
         Star Wars Characters
       </h2>
+      <p>
+        Based off the first 6 movies, does not contain live action / animated
+        series
+      </p>
       <div className="center">
         <input
           className="input"
