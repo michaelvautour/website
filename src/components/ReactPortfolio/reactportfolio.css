@@ -1,21 +1,24 @@
-.title-padding {
+.title-padding-react {
   padding-top: 50px;
   padding-bottom: 75px;
 }
 
-.grid {
+.grid-react {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 20px;
+  margin: 0 auto;
+  width: 95%;
 }
 
-.prop-img {
-  align-items: center;
+/*
+If i add multiple projects I may need to add this back in
+.prop-img-react {
   width: 50%;
   height: 50%;
-}
+} */
 
-.card {
+.card-react {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,13 +27,7 @@
   border-radius: 0.25em;
 }
 
-.img-portfolio {
-  width: 60%;
-  height: 80%;
-  margin: auto;
-}
-
-.btn {
+.btn-react {
   font-size: 0.85em;
   color: #fff;
   font-weight: bold;
@@ -44,23 +41,6 @@
   margin-top: auto;
 }
 
-.btn:hover {
+.btn-react:hover {
   background-color: rgba(39, 141, 164, 0.8);
-}
-
-h3 {
-  padding-bottom: 15px;
-}
-
-h2 {
-  text-align: center;
-}
-
-div p {
-  color: black;
-  font-size: 1rem;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
 }

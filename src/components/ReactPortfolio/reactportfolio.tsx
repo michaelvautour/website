@@ -9,23 +9,23 @@ const ReactPortfolio = () => {
 
   return (
     <main>
-      <h2 className="title-padding" id="Portfolio">
+      <h2 className="title-padding-react" id="Portfolio">
         React Portfolio
       </h2>
-      <div className="grid">
+      <div className="grid-react">
         {data.map((gallery: ReactPortfolioType) => {
           const { id, title, description, techUsed, image } = gallery;
           return (
-            <div className="card" key={id}>
+            <div className="card-react" key={id}>
               <h3>{title}</h3>
-              <img src={image} className="prop-img" alt={title} />
+              <img src={image} className="prop-img-react" alt={title} />
               <p>
                 <strong>Description:</strong>
                 {description}
               </p>
               <p>Technologies used: {techUsed}</p>
               <Link to="/StarWarsAPIProject" target="_blank">
-                <button className="btn">View Project</button>
+                <button className="btn-react">View Project</button>
               </Link>
             </div>
           );
