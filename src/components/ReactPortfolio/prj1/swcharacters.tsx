@@ -9,8 +9,6 @@ const StarWarsAPIProject = () => {
   const [characterSearch, setCharacterSearch] = useState("");
   const { characters } = useFetchStarWarsPeople(url, characterSearch);
 
-  // const inputEl = useRef<HTMLInputElement>(null);
-
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCharacterQuery(event.target.value);
   };

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { reactPortfolioData } from "../../data/reactportfolio";
-import { ReactPortfolioType } from "./reacttypes";
+import { ReactPortfolioType } from "./reactportfolio.types";
 import "./reactportfolio.css";
 import { Link } from "react-router-dom";
 
