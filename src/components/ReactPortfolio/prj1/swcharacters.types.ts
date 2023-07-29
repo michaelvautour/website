@@ -1,4 +1,4 @@
-export interface SWCharacter {
+export interface SWCharacters {
   name: string;
   height: string;
   mass: string;
@@ -18,7 +18,16 @@ export interface SWCharacter {
 }
 
 export interface ApiFetchState {
-  characters: SWCharacter[];
+  characters: SWCharacters[];
   isLoading: boolean;
   error: Error | null;
 }
+
+export type StarWarsCharacter = {
+  key?: number;
+  character: string;
+  height: string;
+  hairColor: string;
+  birthYear: string;
+  skinColor: string;
+};
