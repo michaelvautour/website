@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { SWCharacter, ApiFetchState } from "./swcharacters.types";
+import { SWCharacters, ApiFetchState } from "./swcharacters.types";
 
 export const useFetchStarWarsPeople = (
   url: string,
   characterSearch: string
 ): ApiFetchState => {
-  const [characters, setCharacters] = useState<SWCharacter[]>([]);
+  const [characters, setCharacters] = useState<SWCharacters[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -21,8 +21,8 @@ export const useFetchStarWarsPeople = (
         } else {
           setError(new Error("An unknown error occurred."));
         }
-        setIsLoading(false);
       }
+      setIsLoading(false);
     };
 
     fetchCharacters();
