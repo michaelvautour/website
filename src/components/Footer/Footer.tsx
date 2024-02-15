@@ -18,7 +18,7 @@ const Footer = () => {
         );
       })}
       <p id="Contact" className="copyright">
-        &copy; Michael Vautour, 2023
+        &copy; Michael Vautour, 2024
       </p>
     </footer>
   );
